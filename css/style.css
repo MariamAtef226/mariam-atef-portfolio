@@ -1,0 +1,336 @@
+:root {
+  --bs-dark: #212529;
+  --light-blue: #97d3df;
+  --shadow-blue: #88b4be;
+  --darker-blue: #305056;
+  --hover-lighter-blue: #b3f1ff;
+  --greyish: #9b9d9b;
+}
+
+@keyframes avatar-move {
+  from {
+    top: -50px;
+  }
+  to {
+    top: 25px;
+  }
+}
+
+@keyframes fade-in{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+@keyframes fade-out{
+  0%{
+    opacity:1;
+  }
+  100%{
+    opacity:0;
+  }
+}
+
+.elementToFadeInAndOut {
+  width:200px;
+  height: 200px;
+  background: red;
+  -webkit-animation: fadein 0.8s linear forwards;
+  animation: fadein 0.8s linear forwards;
+}
+
+
+
+body {
+  font-family: "Cabin", sans-serif;
+  background: url(../imgs/bg.png) var(--bs-dark);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* for general styling of background */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* NavBar Stylings*/
+
+.hover-change,
+.brand-name {
+  font-size: 2rem;
+  color: var(--shadow-blue);
+  text-decoration: none;
+  transition: color ease-in 0.1s;
+}
+
+.brand-name {
+  color: var(--bs-dark);
+}
+
+.hover-change:hover {
+  color: var(--hover-lighter-blue);
+}
+
+.navbar-nav {
+  font-size: 1.5rem;
+}
+
+/* Landing Stylings */
+.landing {
+  font-size: 5rem;
+  color: var(--light-blue);
+  font-weight: bold;
+  height: 750px;
+  padding-top: 120px;
+}
+
+
+.landing .inner-div {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+#avatar{
+  width:550px;
+  padding-right:50px;
+}
+
+.avatar-container{
+  position: relative;
+  animation: avatar-move 2s linear infinite alternate;
+
+}
+
+
+@media (max-width: 1200px){
+  .landing {
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 80px;
+  }
+  #avatar{
+    width:320px;
+    padding-top:50px;
+    padding-right:0;
+  }
+  .landing .inner-div {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 778px) {
+  .landing {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+
+  .landing .inner-div {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 475px) and (max-width: 778px) {
+  .landing {
+    font-size: 3.8rem;
+  }
+
+  .landing .inner-div {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+/* title styling */
+
+.section-title {
+  margin: 0 auto;
+  width: 400px;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .section-title {
+    width: 200px;
+    font-size: 2.5rem;
+  }
+}
+
+.underline {
+  border-top: solid var(--greyish);
+  width: 100px;
+  margin: 0 auto;
+}
+
+.title-icon {
+  color: var(--greyish);
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* about styling */
+.about {
+  height: 750px;
+  background: url("../imgs/aboutbg.png") var(--bs-dark);
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: var(--greyish);
+}
+
+.about .section-title {
+  color: var(--hover-lighter-blue);
+}
+
+.about-text {
+  font-size: 1.7rem;
+  padding: 50px 0;
+  margin: 0 auto;
+}
+
+.about .btn {
+  background-color: var(--darker-blue);
+}
+
+.enlarge1{
+  font-size: 15rem;
+  padding-left:50px;
+}
+
+.enlarge2{
+  font-size: 15rem;
+  padding-right:50px;
+}
+
+/*hiding icons in case of smaller screens*/
+@media (max-width: 1220px){
+  .enlarge1, .enlarge2{
+    display:none !important;
+  }
+}
+
+/* adjusting sections height by testing different screens*/
+@media (min-width:1130px){
+  .about{
+    height:640px;
+  }
+}
+
+@media (max-width:796px){
+  .about p{
+    font-size:1.5rem;
+  }
+  .about{
+    height:640px;
+  }
+}
+
+
+@media (max-width:394px){
+  .about{
+    height: 850px;
+  }
+}
+
+
+/*projects styling*/
+
+.project{
+  background-color: var(--darker-blue) ;
+  padding-bottom:70px;
+}
+
+
+#mobileNavProjects{
+  background-color: rgba(255,255,255,0.4);
+  margin: 40px 40px 20px;
+  padding:10px;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+
+
+@media(min-width:600px){
+  .about-proj, .more, .github-btn{
+    font-size:1.6rem;
+  }
+  
+}
+.side-nav-proj{
+  background-color: var(--bs-dark);
+
+  margin:20px;
+  padding-bottom:45px;
+  margin-bottom:10px
+
+}
+
+.nav-proj button{
+  font-size:2rem;
+  padding-top:50px;
+  padding-bottom:50px;
+  color: var(--light-blue);
+}
+
+.nav-proj button:hover{
+  background-color:rgba(255,255,255,0.4);
+  border-color:transparent;
+}
+
+.nav-proj button:focus{
+  border-color: var(--greyish);
+}
+
+.nav-proj button.active-project{
+  background-color:rgba(255,255,255,0.4);
+  border-color:transparent;
+  color:var(--light-blue);
+  
+}
+
+.disp-proj{
+  padding:10px;
+  margin:10px;
+  height:350px;
+  color:rgba(255,255,255,0.6);
+  font-size:1rem;
+  line-height: 398px;;
+}
+
+@media (min-width:1200px){
+  #mobileNavProjects{
+    display: none;
+  }
+  .disp-proj{
+    height:700px;
+  }
+}
+
+@media (max-width:1200px){
+  .side-nav-proj{
+    display:none !important;
+  }
+}
+
+.about-proj{
+  background-color: rgba(255,255,255,0.1);
+  margin:10px;
+  padding:10px;
+
+}
+
+.project .github-btn{
+  background-color:var(--bs-dark);
+  margin-top:10px;
+}
+
+.more{
+  color:var(--light-blue);
+}
