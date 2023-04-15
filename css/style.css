@@ -33,13 +33,6 @@
   }
 }
 
-.elementToFadeInAndOut {
-  width:200px;
-  height: 200px;
-  background: red;
-  -webkit-animation: fadein 0.8s linear forwards;
-  animation: fadein 0.8s linear forwards;
-}
 
 
 
@@ -245,7 +238,6 @@ img {
   padding-bottom:70px;
 }
 
-
 #mobileNavProjects{
   background-color: rgba(255,255,255,0.4);
   margin: 40px 40px 20px;
@@ -255,14 +247,13 @@ img {
   font-weight: bold;
 }
 
-
-
 @media(min-width:600px){
   .about-proj, .more, .github-btn{
     font-size:1.6rem;
   }
   
 }
+
 .side-nav-proj{
   background-color: var(--bs-dark);
 
@@ -333,4 +324,59 @@ img {
 
 .more{
   color:var(--light-blue);
+}
+
+/* Contacts Styling */
+
+.contact-icon{
+  font-size:10rem;
+  color: var(--hover-lighter-blue);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icons-holder:hover .contact-icon{
+  font-size:12rem;
+  color: var(--shadow-blue);
+}
+
+.contact-icon {
+  transition: font-size  0.5s, color 0.5s;
+}
+
+.icons-holder{
+  height:200px;
+}
+
+.contact-text{
+  opacity:0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:1.4rem;
+  transition: opacity  0.5s;
+  color:white;
+  background-color:rgba(2, 17, 19, 0.5);
+
+}
+
+.contact-text a{
+  color:white;
+}
+
+.icons-holder:hover .contact-text{
+  opacity:100%;
+}
+
+@media (max-width: 767px){
+  #contact{
+    height:1100px;
+  }
+}
+
+@media (min-width: 993px) {
+  #contact{
+    height:600px;
+  }
 }
