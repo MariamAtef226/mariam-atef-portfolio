@@ -72,12 +72,14 @@ window.onload = function () {
     "BookArt Shop is a static business portfolio for my small business, BookArt Shop. The website includes information\
    about the owner and the business itself, in addition to displaying the products sold. Stickers & Other Products pages are still under\
     construction. The wesbite is responsive on all devices. It was implemented using native tools (HTML, CSS, JavaScript & Bootstrap 5).\
-     The website follows Bondi design. It's an individual personal project.";
+     The website follows Bondi design. It's an individual personal project.<br>\
+     Link to website: https://mariamatef226.github.io/bookartalex/";
 
   aboutProject["Pour Elle"] =
     "Pour Elle is a static website for women care that uses Bondi design scheme. The website is still under construction.\
    It was implemented using HTML, CSS, Bootstrap5 & JavaScript. It was a final project for an online frontend course and it was an individual project.\
-  Responsivness is supported on all devices.";
+  Responsivness is supported on all devices.<br>\
+  Link to website: https://mariamatef226.github.io/pourelle/";
 
   aboutProject["Ducktionary"] =
     "A Python desktop application of an offline english dictionary. Useful in case of lack of internet connection for people who are studying\
