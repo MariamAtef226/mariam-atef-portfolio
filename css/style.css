@@ -380,3 +380,25 @@ img {
     height:600px;
   }
 }
+
+
+/* Techs section*/
+
+
+#techs img{
+  width:200px;
+}
+
+#techs #htmlcss{
+  width:400px;
+}
+
+@media (max-width:570px){
+  #techs img{
+    width:150px;
+  }
+  #techs #htmlcss{
+    width:250px;
+  }
+
+}
