@@ -40,22 +40,17 @@ window.onload = function () {
   // When adding new project, introduce it in each of the following 3 structures:
 
   // structure 1
-  const projects = new Map([
-    ["Sure Wheels", "video"],
-    ["BookArt Shop", "iframe"],
-    ["Pour Elle", "iframe"],
-    ["Ducktionary", "video"],
-  ]);
+  const projects = ["Sure Wheels", "BookArt Shop", "Pour Elle", "Ducktionary"];
 
   // structure 2
   const projectSource = Array();
   projectSource["Sure Wheels"] =
-    "https://www.shutterstock.com/image-photo/mountains-under-mist-morning-amazing-260nw-1725825019.jpg";
+    "https://www.youtube.com/embed/D3pLPoz0UhA?autoplay=1&mute=1&controls=0&loop=1";
   projectSource["BookArt Shop"] =
     "https://mariamatef226.github.io/bookartalex/";
   projectSource["Pour Elle"] = "https://mariamatef226.github.io/pourelle/";
   projectSource["Ducktionary"] =
-    "https://www.shutterstock.com/image-photo/mountains-under-mist-morning-amazing-260nw-1725825019.jpg";
+    "https://www.youtube.com/embed/mOdyblwMmNg?autoplay=1&mute=1&controls=0&loop=1";
 
   // structure 3
   const aboutProject = Array();
@@ -66,20 +61,23 @@ window.onload = function () {
     <br> The website includes an admin module for the owners to monitor reservations, revenue and other business data.\
    The database is implemented using RDBMS - MySQL and the backend is implemented using PHP. The frontend was done\
     using HTML, CSS, Bootstrap4/5 and JavaScript. It was a team project for uni. I was responsible for the backend portion,\
-     in addition to applying responstivity to the website.";
+     in addition to applying responstivity to the website.<br>\
+     <a class='text-decoration-none text-info'href='wheels.000webhostapp.com/customer_module/home.php'>Pay a visit to the Website? Click here!</a>\
+     <br><span style='font-size:0.9rem;'>PS: use VPN, since 000webhost isn't working on all ISPs</span>";
+     
 
   aboutProject["BookArt Shop"] =
     "BookArt Shop is a static business portfolio for my small business, BookArt Shop. The website includes information\
    about the owner and the business itself, in addition to displaying the products sold. Stickers & Other Products pages are still under\
     construction. The wesbite is responsive on all devices. It was implemented using native tools (HTML, CSS, JavaScript & Bootstrap 5).\
      The website follows Bondi design. It's an individual personal project.<br>\
-     Link to website: https://mariamatef226.github.io/bookartalex/";
+     <a class='text-decoration-none text-info'href='https://mariamatef226.github.io/bookartalex/'>Pay a visit to the Website? Click here!</a>";
 
   aboutProject["Pour Elle"] =
     "Pour Elle is a static website for women care that uses Bondi design scheme. The website is still under construction.\
    It was implemented using HTML, CSS, Bootstrap5 & JavaScript. It was a final project for an online frontend course and it was an individual project.\
   Responsivness is supported on all devices.<br>\
-  Link to website: https://mariamatef226.github.io/pourelle/";
+  <a class='text-decoration-none link-info'href='https://mariamatef226.github.io/pourelle/'>Pay a visit to the Website? Click here!</a>";
 
   aboutProject["Ducktionary"] =
     "A Python desktop application of an offline english dictionary. Useful in case of lack of internet connection for people who are studying\
@@ -87,7 +85,7 @@ window.onload = function () {
     application would display its english definition.<br> The application is implemented using Python 3. The algorithm is based on Red-black trees\
     data structure, which supports good response time. Finally, the source of the dictionary is Merriam-Webster's dictionary.";
 
-  const [firstProj] = projects.keys(); // First project reference
+  firstProj = projects[0]; // First project reference
 
   // ------------------------------------
   // 1st: Small Screens:
@@ -101,14 +99,14 @@ window.onload = function () {
   let projDisplay = document.querySelector(".disp-proj");
   let aboutProj = document.querySelector(".about-proj");
 
-  for (let [name, type] of projects) {
+  for (let name of projects) {
     // Create Element
 
     var element = document.createElement("div");
     if (name == firstProj) {
-      element.classList.add("carousel-item", "active", "text-center", type);
+      element.classList.add("carousel-item", "active", "text-center");
     } else {
-      element.classList.add("carousel-item", "text-center", type);
+      element.classList.add("carousel-item", "text-center");
     }
     element.innerText = name;
 
@@ -122,26 +120,18 @@ window.onload = function () {
   // A) default on load --> 1st Project
   // get first project's attributes
 
-  let type = projects.get(firstProj);
+  // let type = projects.get(firstProj);
   let src = projectSource[firstProj];
 
   // load the display -- """" the else clause to be modified """"
 
-  if (type == "iframe") {
-    var frame = document.createElement("iframe");
-    frame.setAttribute("src", src);
-    frame.setAttribute("width", "100%");
-    frame.setAttribute("height", "100%");
-    frame.style.margin = "0 auto";
-    frame.style.border = "solid #212529 5px";
-    projDisplay.append(frame);
-  } else {
-    var img = document.createElement("img");
-    img.setAttribute("src", src);
-    img.style.width = "100%";
-    img.style.height = "100%";
-    projDisplay.append(img);
-  }
+  var frame = document.createElement("iframe");
+  frame.setAttribute("src", src);
+  frame.setAttribute("width", "100%");
+  frame.setAttribute("height", "100%");
+  frame.style.margin = "0 auto";
+  frame.style.border = "solid #212529 5px";
+  projDisplay.append(frame);
 
   // Displaying its about section
   aboutProj.innerHTML = aboutProject[firstProj];
@@ -167,26 +157,15 @@ window.onload = function () {
           element.classList.contains("active")
         )[0].innerText;
 
-        let type = projects.get(active);
         let src = projectSource[active];
 
-        if (type == "iframe") {
-          var frame = document.createElement("iframe");
-          frame.setAttribute("src", src);
-          frame.setAttribute("width", "100%");
-          frame.setAttribute("height", "100%");
-          frame.style.margin = "0 auto";
-          frame.style.border = "solid #212529 5px";
-          projDisplay.append(frame);
-        } else {
-          // lesa hn load el video
-
-          var img = document.createElement("img");
-          img.setAttribute("src", src);
-          img.setAttribute("width", "100%");
-          img.setAttribute("height", "100%");
-          projDisplay.append(img);
-        }
+        var frame = document.createElement("iframe");
+        frame.setAttribute("src", src);
+        frame.setAttribute("width", "100%");
+        frame.setAttribute("height", "100%");
+        frame.style.margin = "0 auto";
+        frame.style.border = "solid #212529 5px";
+        projDisplay.append(frame);
 
         // fade in effect
 
@@ -206,7 +185,7 @@ window.onload = function () {
 
   let projSideBar = document.querySelector(".side-nav-proj");
 
-  for (let [name, type] of projects) {
+  for (let name of projects) {
     // Create Element
 
     var element = document.createElement("button");
@@ -235,33 +214,7 @@ window.onload = function () {
 
   // Displaying Currently Active Project
 
-  // A) default on load --> 1st Project
-  // get first project's attributes
-
-
-
-  // load the display -- """" the else clause to be modified """"
-
-  // if (type == "iframe") {
-  //   var frame = document.createElement("iframe");
-  //   frame.setAttribute("src", src);
-  //   frame.setAttribute("width", "100%");
-  //   frame.setAttribute("height", "100%");
-  //   frame.style.margin = "0 auto";
-  //   frame.style.border = "solid #212529 5px";
-  //   projDisplay.append(frame);
-  // } else {
-  //   var img = document.createElement("img");
-  //   img.setAttribute("src", src);
-  //   img.style.width = "100%";
-  //   img.style.height = "100%";
-  //   projDisplay.append(img);
-  // }
-
-  // Displaying its about section
-  aboutProj.innerHTML = aboutProject[firstProj];
-
-  // B) On Changing the tab
+  // On Changing the tab
 
   document
     .querySelector(".side-nav-proj")
@@ -280,27 +233,15 @@ window.onload = function () {
           element.classList.contains("active-project")
         )[0].innerText;
 
-        let type = projects.get(active);
         let src = projectSource[active];
 
-        if (type == "iframe") {
-          var frame = document.createElement("iframe");
-          frame.setAttribute("src", src);
-          frame.setAttribute("width", "100%");
-          frame.setAttribute("height", "100%");
-          frame.style.margin = "0 auto";
-          frame.style.border = "solid #212529 5px";
-          projDisplay.append(frame);
-        } else {
-          // lesa hn load el video
-
-          var img = document.createElement("img");
-          img.setAttribute("src", src);
-          img.style.width="100%";
-          img.style.height="100%";
-
-          projDisplay.append(img);
-        }
+        var frame = document.createElement("iframe");
+        frame.setAttribute("src", src);
+        frame.setAttribute("width", "100%");
+        frame.setAttribute("height", "100%");
+        frame.style.margin = "0 auto";
+        frame.style.border = "solid #212529 5px";
+        projDisplay.append(frame);
 
         // fade in effect
 
