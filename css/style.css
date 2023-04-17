@@ -384,7 +384,9 @@ img {
 
 /* Techs section*/
 
-
+#techs{
+  background-color: var(--darker-blue);
+}
 #techs img{
   width:200px;
 }
