@@ -63,7 +63,7 @@ window.onload = function () {
     using HTML, CSS, Bootstrap4/5 and JavaScript. It was a team project for uni. I was responsible for the backend portion,\
      in addition to applying responstivity to the website.<br>\
      <a class='text-decoration-none text-info'href='wheels.000webhostapp.com/customer_module/home.php'>Pay a visit to the Website? Click here!</a>\
-     <br><i class='text-warning' style='font-size:1rem;'>PS: use VPN, since 000webhost isn't working on all ISPs</i>";
+     <br> <i class='text-warning' style='font-size:1rem;'>PS: use VPN, since 000webhost isn't working on all ISPs</i>";
      
 
   aboutProject["BookArt Shop"] =
