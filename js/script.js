@@ -40,7 +40,7 @@ window.onload = function () {
   // When adding new project, introduce it in each of the following 3 structures:
 
   // structure 1
-  const projects = ["Sure Wheels", "BookArt Shop", "Pour Elle", "Ducktionary"];
+  const projects = ["Sure Wheels", "BookArt Shop", "Pour Elle", "Ducktionary", "Tic-Tac-Toe", "What's Your Age"];
 
   // structure 2
   const projectSource = Array();
@@ -51,6 +51,9 @@ window.onload = function () {
   projectSource["Pour Elle"] = "https://mariamatef226.github.io/pourelle/";
   projectSource["Ducktionary"] =
     "https://www.youtube.com/embed/mOdyblwMmNg?autoplay=1&mute=1&controls=0&loop=1";
+  projectSource["Tic-Tac-Toe"] =
+    "https://mariamatef226.github.io/tic-tac-toe/game.html";
+  projectSource["What's Your Age"] = "https://mariamatef226.github.io/what-is-your-age/";  
 
   // structure 3
   const aboutProject = Array();
@@ -84,6 +87,15 @@ window.onload = function () {
    English or reading a book & have met a word they're unfamiliar with and would like to know its meaning (defintion). The user would enter the meant word, and the\
     application would display its english definition.<br> The application is implemented using Python 3. The algorithm is based on Red-black trees\
     data structure, which supports good response time. Finally, the source of the dictionary is Merriam-Webster's dictionary.";
+
+  aboutProject["Tic-Tac-Toe"] = 
+  "A simple Tic-Tac-Toe web game, where player plays against the app. Choices by the app are randomly developed, i'ts not AI based. It was a part of a JavaScript course.\
+  The game is responsive and playable on all screens.";
+
+  aboutProject["What's Your Age"] ="An online accurate age calculator, to which you enter your detailed date of birth (including year, month, day, hour, minute\
+  and second if you wish). Afterwards, it'll display to you a very accurate age of yours (also in year, month, day, hour, minute and second).\
+  The calculator works and responsive on all devices. Interactivity is done using JavaScript";
+  
 
   firstProj = projects[0]; // First project reference
 
@@ -175,6 +187,8 @@ window.onload = function () {
         // Displaying its about section
         aboutProj.innerHTML = aboutProject[active];
       }, 800);
+
+
     });
 
   // ------------------------------------
@@ -250,7 +264,13 @@ window.onload = function () {
 
         // Displaying its about section
         aboutProj.innerHTML = aboutProject[active];
+
+        // adjust size of sidenav
+        //var aboutsecheight = document.querySelector(".about-proj").offsetHeight;
+        //let h = aboutsecheight + 702;
+
       }, 800);
+
     });
 };
 
