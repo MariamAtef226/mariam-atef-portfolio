@@ -45,7 +45,7 @@ window.onload = function () {
   // structure 2
   const projectSource = Array();
   projectSource["House Wallet"] =
-  "https://www.youtube.com/embed/D3pLPoz0UhA?autoplay=1&mute=1&controls=0&loop=1";
+  "https://www.youtube.com/embed/oWncRAk1Ga0?autoplay=1&mute=1&controls=0&loop=1";
   projectSource["Sure Wheels"] =
     "https://www.youtube.com/embed/D3pLPoz0UhA?autoplay=1&mute=1&controls=0&loop=1";
   projectSource["BookArt Shop"] =
@@ -66,7 +66,8 @@ window.onload = function () {
   3.Providing users with a summary of their total remaining, consumed, and original budget.<br>\
   4.Allowing user to modify their budget details, such as initial budget and consumption alert values.<br>\
   5.Storing the net budget of the previous months, allowing users to track and adjust their spending habits.<br>\
-  The application UI is built on desktop-first design basis. It's responsive on all devices."
+  The application UI is built on desktop-first design basis. It's responsive on all devices.<br>\
+  <a class='text-decoration-none text-info' href='http://house-wallet.epizy.com/'>Pay a visit to the Website? Click here!</a>";
 
   aboutProject["Sure Wheels"] =
     "Sure Wheels is a dynamic website for a virtual car rental business, where a customer\
@@ -84,13 +85,13 @@ window.onload = function () {
    about the owner and the business itself, in addition to displaying the products sold. Stickers & Other Products pages are still under\
     construction. The wesbite is responsive on all devices. It was implemented using native tools (HTML, CSS, JavaScript & Bootstrap 5).\
      The website follows Bondi design. It's an individual personal project.<br>\
-     <a class='text-decoration-none text-info'href='https://mariamatef226.github.io/bookartalex/'>Pay a visit to the Website? Click here!</a>";
+     <a class='text-decoration-none text-info' href='https://mariamatef226.github.io/bookartalex/'>Pay a visit to the Website? Click here!</a>";
 
   aboutProject["Pour Elle"] =
     "Pour Elle is a static website for women care that uses Bondi design scheme. The website is still under construction.\
    It was implemented using HTML, CSS, Bootstrap5 & JavaScript. It was a final project for an online frontend course and it was an individual project.\
   Responsivness is supported on all devices.<br>\
-  <a class='text-decoration-none link-info'href='https://mariamatef226.github.io/pourelle/'>Pay a visit to the Website? Click here!</a>";
+  <a class='text-decoration-none link-info' href='https://mariamatef226.github.io/pourelle/'>Pay a visit to the Website? Click here!</a>";
 
   aboutProject["Ducktionary"] =
     "A Python desktop application of an offline english dictionary. Useful in case of lack of internet connection for people who are studying\
