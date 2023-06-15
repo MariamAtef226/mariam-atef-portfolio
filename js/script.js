@@ -61,11 +61,11 @@ window.onload = function () {
   const aboutProject = Array();
   aboutProject["House Wallet"] =
   "A web-based application that helps users to manage their household budgets effectively where it provides users with the ability to track their expenses, set budgets, and monitor their spending habits. It includes the following features:<br>\
-  1.Database for storing multiple users data where a user can login to his account from any device, and more than one user can track their budgets using the same device, making it easier for families to manage their budgets together.<br>\
-  2.Storing purchases where users are allowed to input their purchases and their dates, which will be displayed in a list format. Users can filter the list based on prices range or purchase category.<br>\
-  3.Providing users with a summary of their total remaining, consumed, and original budget. This will help users to track their spending and adjust their budgets accordingly.<br>\
-  4.Allowing user to modify their budget details from the settings menu, such as initial budget and consumption alert values.<br>\
-  5.Storing the net budget of the previous months, allowing users to track and adjust their spending habits over time.<br>\
+  1.Database for storing multiple users data where a user can login to his account from any device, and more than one user can track their budgets using the same device.<br>\
+  2.Storing purchases for users who can view and filter them in a list format.<br>\
+  3.Providing users with a summary of their total remaining, consumed, and original budget.<br>\
+  4.Allowing user to modify their budget details, such as initial budget and consumption alert values.<br>\
+  5.Storing the net budget of the previous months, allowing users to track and adjust their spending habits.<br>\
   The application UI is built on desktop-first design basis. It's responsive on all devices."
 
   aboutProject["Sure Wheels"] =
