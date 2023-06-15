@@ -40,10 +40,12 @@ window.onload = function () {
   // When adding new project, introduce it in each of the following 3 structures:
 
   // structure 1
-  const projects = ["Sure Wheels", "BookArt Shop", "Pour Elle", "Ducktionary", "Tic-Tac-Toe", "What's Your Age"];
+  const projects = ["House Wallet", "Sure Wheels", "BookArt Shop", "Pour Elle", "Ducktionary", "Tic-Tac-Toe", "What's Your Age"];
 
   // structure 2
   const projectSource = Array();
+  projectSource["House Wallet"] =
+  "https://www.youtube.com/embed/D3pLPoz0UhA?autoplay=1&mute=1&controls=0&loop=1";
   projectSource["Sure Wheels"] =
     "https://www.youtube.com/embed/D3pLPoz0UhA?autoplay=1&mute=1&controls=0&loop=1";
   projectSource["BookArt Shop"] =
@@ -57,6 +59,14 @@ window.onload = function () {
 
   // structure 3
   const aboutProject = Array();
+  aboutProject["House Wallet"] =
+  "A web-based application that helps users to manage their household budgets effectively where it provides users with the ability to track their expenses, set budgets, and monitor their spending habits. It includes the following features:<br>\
+  1.Database for storing multiple users data where a user can login to his account from any device, and more than one user can track their budgets using the same device, making it easier for families to manage their budgets together.<br>\
+  2.Storing purchases where users are allowed to input their purchases and their dates, which will be displayed in a list format. Users can filter the list based on prices range or purchase category.<br>\
+  3.Providing users with a summary of their total remaining, consumed, and original budget. This will help users to track their spending and adjust their budgets accordingly.<br>\
+  4.Allowing user to modify their budget details from the settings menu, such as initial budget and consumption alert values.<br>\
+  5.Storing the net budget of the previous months, allowing users to track and adjust their spending habits over time.<br>\
+  The application UI is built on desktop-first design basis. It's responsive on all devices."
 
   aboutProject["Sure Wheels"] =
     "Sure Wheels is a dynamic website for a virtual car rental business, where a customer\
@@ -90,11 +100,14 @@ window.onload = function () {
 
   aboutProject["Tic-Tac-Toe"] = 
   "A simple Tic-Tac-Toe web game, where player plays against the app. Choices by the app are randomly developed, i'ts not AI based. It was a part of a JavaScript course.\
-  The game is responsive and playable on all screens.";
+  The game is responsive and playable on all screens.<br>\
+  <a class='text-decoration-none text-info'href='https://mariamatef226.github.io/tic-tac-toe/game.html'>Pay a visit to the Website? Click here!</a>";
 
   aboutProject["What's Your Age"] ="An online accurate age calculator, to which you enter your detailed date of birth (including year, month, day, hour, minute\
   and second if you wish). Afterwards, it'll display to you a very accurate age of yours (also in year, month, day, hour, minute and second).\
-  The calculator works and responsive on all devices. Interactivity is done using JavaScript";
+  The calculator works and responsive on all devices. Interactivity is done using JavaScript. <br>\
+  <a class='text-decoration-none text-info'href='https://mariamatef226.github.io/what-is-your-age/index.html'>Pay a visit to the Website? Click here!</a>";
+
   
 
   firstProj = projects[0]; // First project reference
