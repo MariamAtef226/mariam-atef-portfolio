@@ -1,0 +1,6 @@
+add padding to the sections to account for the scroll
+convert your projects into a Json file (easier)
+add more techs and adjust their icons size
+add certificates
+background color of contact hovers isn't cool
+make more effects and animations
