@@ -1,6 +1,11 @@
-add certificates
 background color of contact hovers isn't cool
 make more effects and animations
+
+background effect for about section
+improve content for about section
+project should be displayed as images better (grid to display several screens)
+
+make contact section more fun
 
 
 reference:
