@@ -259,9 +259,9 @@ img {
   margin:20px;
   padding-bottom:45px;
   margin-bottom:10px;
-  /*height:1065px;
+  height:1376px;
   overflow-y: scroll;
-  We can use this in case projects increase even more*/ 
+  /*We can use this in case projects increase even more*/ 
 
 }
 
@@ -371,6 +371,10 @@ img {
 
 .icons-holder:hover .contact-text{
   opacity:100%;
+}
+
+#about, #project, #contact, #techs{
+ padding-top: 70px;
 }
 
 @media (max-width: 767px){

@@ -33,6 +33,33 @@ export default [
     about:
       "A simple quiz app using React.js. This solo project is the final project for Bob Ziroll's 'Learn React' course on Scrimba.\
     <a class='text-decoration-none link-info' target='_blank' href='https://mariamatef226.github.io/binge-watcher-test/'>Pay a visit to the Website? Click here!</a>",
+
+  },
+  {
+    name:'Tenzies',
+    about:"A dynamic interactive webgame using React.js. The project is a part of Bob Ziroll's 'Learn React' course on Scrimba.\
+     I've built the code on my own from scratch before watching the videos, then used the videos as a reference for rating my work.\
+      Also, I've added extra features such as high score tracking, counting number of rolls per game and determine duration of game.\
+      <a class='text-decoration-none link-info' target='_blank' href='https://mariamatef226.github.io/tenzier/'>Pay a visit to the Website? Click here!</a>",
+      source:"https://mariamatef226.github.io/tenzies/"
+  },
+  {
+    name:'Memes Generator',
+    about:"A dynamic interactive webpage for a memes generator. The project is a part of Bob Ziroll's 'Learn React' course on Scrimba.\
+     The aim of the project is getting familiar with react's state, using them in practice, know more about its tricks, and produce \
+     user interactive pages using react. The page is responsive.\
+     <a class='text-decoration-none link-info' target='_blank' href='https://memes-generator-mariam-atef.netlify.app/'>Pay a visit to the Website? Click here!</a>",
+     source:"https://memes-generator-mariam-atef.netlify.app/"
+  },
+  {
+    name:'My Notes App',
+    about:"A dynamic interactive notes web app that supports markdown language. The project is a part of Bob Ziroll's 'Learn React' course\
+     on Scrimba. The base code of the app was provided for us to build more features on it. The aim of the project is practicing what \
+     we've learned throughout the 3 sections of the course and learning about & using firebase. ** There was an issue concerning the \
+     used React-mde library since it doesn't work with React 18, yet. As a result, I've hardcoded some of the libraries styling. The \
+     functionality of the library was forced into the project.\
+     <a class='text-decoration-none link-info' target='_blank' href='https://mariamatef226.github.io/my-notes-web-app/'>Pay a visit to the Website? Click here!</a>",
+     source:"https://mariamatef226.github.io/my-notes-web-app/"
   },
   {
     name: "BookArt Shop",
