@@ -1,3 +1,7 @@
 add certificates
 background color of contact hovers isn't cool
 make more effects and animations
+
+
+reference:
+https://brittanychiang.com/#projects
