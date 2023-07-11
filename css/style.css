@@ -373,9 +373,7 @@ img {
   opacity:100%;
 }
 
-#about, #project, #contact, #techs{
- padding-top: 70px;
-}
+
 
 @media (max-width: 767px){
   #contact{
@@ -411,4 +409,12 @@ img {
     width:250px;
   }
 
+}
+
+
+@media (min-width:790px) {
+  #about, #project, #contact, #techs{
+    padding-top: 70px;
+   }
+  
 }
