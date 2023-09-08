@@ -1,3 +1,4 @@
+import img from "../assets/van-life.gif"
 
 
 export default function Project({
@@ -13,7 +14,7 @@ export default function Project({
   return (
     <div className="project-card d-flex flex-column flex-lg-row">
       <div className="image">
-        <img className="proj-image" src={url}/>
+        <img className="proj-image" src={img}/>
       </div>
       <div className='text p-3'>
         <div className="title fw-bold">{title}</div>
