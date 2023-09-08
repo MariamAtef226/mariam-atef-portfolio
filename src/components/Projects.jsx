@@ -1,8 +1,30 @@
 import { useState } from "react";
 import Project from "./Project";
 import projects from "../data/projects.json"
+
+
+
+
+
+import img1 from '../assets/projects/van-life.gif'
+import img2 from '../assets/projects/house-wallet.gif'
+import img3 from '../assets/projects/chic-chick.gif'
+import img4 from '../assets/projects/bitnine-clone.gif'
+import img5 from '../assets/projects/markdown-previewer.gif'
+import img6 from '../assets/projects/background-generator.gif'
+import img7 from '../assets/projects/temperature-converter.gif'
+import img8 from '../assets/projects/tenzies.gif'
+import img9 from '../assets/projects/drum-machine.gif'
+import img10 from '../assets/projects/react-calculator.gif'
+import img11 from '../assets/projects/quotes-generator.gif'
+
+let images = [img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11];
+
+
+
 export default function Projects() {
- 
+
+
   function initClasses() {
     let a = new Array(projects.length);
     a[0] = "semi-active-before";
@@ -87,7 +109,7 @@ export default function Projects() {
   }
 
   let projs = projects.map((p,i)=>{
-    return <div className={"project " + classes[i]}> <Project {...p}/></div>
+    return <div className={"project " + classes[i]}> <Project {...p} image={images[i]}/></div>
 
   })
   return (

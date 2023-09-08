@@ -6,7 +6,7 @@
         "linkTitle": "Check project's repo",
         "tech": "React.js, Bootstrap 5, Firebase",
         "desc": "A responsive simple vans rental website, that includes user interface to check available vans for rental & host dashboard to control their hosted vans.",
-        "image": "src/assets/van-life.gif"
+        "image": "https://raw.githubusercontent.com/MariamAtef226/mariam-atef-portfolio/master/src/assets/background-generator.gif"
     },
     {
         "title": "House Wallet",
