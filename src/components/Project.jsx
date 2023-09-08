@@ -8,7 +8,7 @@ export default function Project({
   link,
   linkTitle,
 }) {
-  let url = 'src/assets/projects/'+image;
+  let url = 'src/assets/'+image;
   console.log(url)
   return (
     <div className="project-card d-flex flex-column flex-lg-row">
