@@ -1,3 +1,4 @@
+
 export default function Project({
   image,
   title,
@@ -7,10 +8,12 @@ export default function Project({
   link,
   linkTitle,
 }) {
+  let url = 'src/assets/projects/'+image;
+  console.log(url)
   return (
     <div className="project-card d-flex flex-column flex-lg-row">
       <div className="image">
-        <img className="proj-image" src={'../assets/projects/'+image} />
+        <img className="proj-image" src={url}/>
       </div>
       <div className='text p-3'>
         <div className="title fw-bold">{title}</div>
