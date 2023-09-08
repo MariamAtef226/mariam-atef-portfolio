@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Project from "./Project";
 import projects from "../data/projects.json"
-import img from "../assets/van-life.gif"
 export default function Projects() {
  
   function initClasses() {
@@ -88,7 +87,7 @@ export default function Projects() {
   }
 
   let projs = projects.map((p,i)=>{
-    return <div className={"project " + classes[i]}> <Project {...p} image={img}/></div>
+    return <div className={"project " + classes[i]}> <Project {...p}/></div>
 
   })
   return (
