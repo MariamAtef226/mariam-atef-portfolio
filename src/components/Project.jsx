@@ -1,4 +1,5 @@
 
+
 export default function Project({
   image,
   title,
@@ -8,8 +9,7 @@ export default function Project({
   link,
   linkTitle,
 }) {
-  let url = 'mariam-atef-portfolio/src/assets/'+image;
-  console.log(url)
+  let url = image;
   return (
     <div className="project-card d-flex flex-column flex-lg-row">
       <div className="image">
