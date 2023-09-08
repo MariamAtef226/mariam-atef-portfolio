@@ -6,7 +6,7 @@
         "linkTitle": "Check project's repo",
         "tech": "React.js, Bootstrap 5, Firebase",
         "desc": "A responsive simple vans rental website, that includes user interface to check available vans for rental & host dashboard to control their hosted vans.",
-        "image": "src/assets/projects/van-life.gif"
+        "image": "van-life.gif"
     },
     {
         "title": "House Wallet",
@@ -15,7 +15,7 @@
         "linkTitle": "Visit Website",
         "tech": "HTML, CSS, JS, BS5, PHP, MySQL",
         "desc": "A house budgeting web app to manage their household budgets effectively by tracking expenses, setting budgets, & monitoring spending habits.",
-        "image": "src/assets/projects/house-wallet.gif"
+        "image": "house-wallet.gif"
     },
     {
         "title": "Chic Chick",
@@ -24,7 +24,7 @@
         "linkTitle": "Visit Website",
         "tech": "React.js, Bootstrap 5",
         "desc": "A simple simulation for an online women wear store. The website includes products categorizing & a simple shopping cart -no payment proceeding-.",
-        "image": "src/assets/projects/chic-chick.gif"
+        "image": "chic-chick.gif"
     },
     {
         "title": "Bitnine Clone",
@@ -33,7 +33,7 @@
         "linkTitle": "Visit Website",
         "tech": "HTML,CSS,JS, BS5",
         "desc": "A webpage that replicates the main features and design of the original Btinine website's home. It was part of bitnine's 2023 internship filtration test.",
-        "image": "src/assets/projects/bitnine-clone.gif"
+        "image": "bitnine-clone.gif"
     },
     {
         "title": "Markdown Previewer",
@@ -42,7 +42,7 @@
         "linkTitle": "Visit Website",
         "tech": "React.js, Bootstrap 5, marked.js",
         "desc": "A simple Markdown previewer app. On typing any md code in the textarea, it's immediately displayed in the preview box, that's been parsed using marked.js library.",
-        "image": "src/assets/projects/markdown-previewer.gif"
+        "image": "markdown-previewer.gif"
     },
     {
         "title": "Background Generator",
@@ -51,7 +51,7 @@
         "linkTitle": "Visit Website",
         "tech": "React.js, Bootstrap 5",
         "desc": "A web app that generates the css rule for backgrounds whether it was a plain color or a gradient. User can preview generated colors and their css rules & copy it.",
-        "image": "src/assets/projects/background-generator.gif"
+        "image": "background-generator.gif"
     },
     {
         "title": "Temperature Converter",
@@ -60,7 +60,7 @@
         "linkTitle": "Visit Website",
         "tech": "React.js, Bootstrap 5",
         "desc": "A realtime temperature Converter with 3 included measuring units: Celsius, Fahrenheit and Kelvin, and invalid input detection. ",
-        "image": "src/assets/projects/temperature-converter.gif"
+        "image": "temperature-converter.gif"
     },
     {
         "title": "Tenzies",
@@ -69,7 +69,7 @@
         "linkTitle": "Visit Website",
         "tech": "React.js, Bootstrap 5",
         "desc": "A dynamic interactive webgame. Responsive on all devices. High score tracking is included.",
-        "image": "src/assets/projects/tenzies.gif"
+        "image": "tenzies.gif"
     },
     {
         "title": "Drum Machine",
@@ -78,7 +78,7 @@
         "linkTitle": "Visit Website",
         "tech": "React.js, Bootstrap 5",
         "desc": "A simple drum machine that works using mouse clicks and keyboard keys (Q, W, E, A, S, D, Z, X, and C), and responsive on all devices.",
-        "image": "src/assets/projects/drum-machine.gif"
+        "image": "drum-machine.gif"
     },
     {
         "title": "React Calculator",
@@ -87,7 +87,7 @@
         "linkTitle": "Visit Website",
         "tech": "React.js, Bootstrap 5",
         "desc": "A simple basic calculator that supports formula based calculations and responsive on all devices.",
-        "image": "src/assets/projects/react-calculator.gif"
+        "image": "react-calculator.gif"
     },
     {
         "title": "Quotes Generator",
@@ -96,7 +96,7 @@
         "linkTitle": "Visit Website",
         "tech": "React.js, Bootstrap 5",
         "desc": "A Random Quotes Generator app that displays a random quote each time the 'New Quote' button is clicked and supports sharing the displayed quote on Twitter.",
-        "image": "src/assets/projects/quotes-generator.gif"
+        "image": "quotes-generator.gif"
     }
 
 ]

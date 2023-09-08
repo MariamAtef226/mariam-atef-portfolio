@@ -10,7 +10,7 @@ export default function Project({
   return (
     <div className="project-card d-flex flex-column flex-lg-row">
       <div className="image">
-        <img className="proj-image" src={image} />
+        <img className="proj-image" src={'../assets/projects/'+image} />
       </div>
       <div className='text p-3'>
         <div className="title fw-bold">{title}</div>
