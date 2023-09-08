@@ -1,0 +1,377 @@
+:root {
+  --dark: #142731;
+  --grey: #cccccc;
+  --dgrey: #5d5e5f;
+  --lblue: #75aac7;
+  --blue: #4281a3;
+}
+
+#root,
+body {
+  font-family: "Montserrat", sans-serif !important;
+  background-color: var(--dark);
+  color: var(--grey);
+  margin: 0;
+}
+
+/* Navbar styling */
+
+.navbar {
+  transition: all 0.4s linear;
+  background-color: var(--dark);
+}
+
+.brand-name {
+  color: var(--grey);
+  font-size: 1.3rem;
+}
+
+.nav-link {
+  color: var(--grey) !important;
+}
+
+.icons a {
+  text-decoration: none;
+  color: var(--grey);
+  font-size: 1.2rem;
+}
+
+.navbar a:hover {
+  color: var(--dgrey) !important;
+}
+
+.navbar-toggler {
+  color: var(--grey) !important;
+}
+
+/* end of Navbar Styling */
+
+/* about section styling */
+
+@keyframes avatar-move {
+  from {
+    top: -30px;
+  }
+  to {
+    top: 20px;
+  }
+}
+
+.avatar-container {
+  position: relative;
+  animation: avatar-move 2s linear infinite alternate;
+  margin-bottom: 50px;
+}
+
+#avatar {
+  width: 300px;
+}
+
+.landing {
+  text-align: center;
+  height: 770px;
+}
+
+.typewritten {
+  width: 90%;
+}
+
+.resume-link {
+  text-decoration: none;
+  color: var(--lblue);
+}
+
+.resume-link:hover {
+  color: var(--blue);
+}
+
+.l3,
+.l4 {
+  font-size: 1.1rem;
+}
+/* for larger screens */
+
+@media (min-width: 768px) {
+  .typewritten {
+    width: 50%;
+  }
+
+  .l3,
+  .l4 {
+    font-size: 1.2rem;
+  }
+  .landing {
+    text-align: left;
+    height: 710px;
+  }
+  .exp-card:hover {
+    scale: 1.1;
+  }
+}
+
+/* for above medium screens */
+
+@media (min-width: 992px) {
+  #avatar {
+    width: 450px;
+  }
+  .exp-card {
+    min-height: 350px;
+  }
+}
+
+/* experience section */
+
+.exp-card {
+  background-color: #5d5e5f66;
+  border-radius: 10px;
+  min-height: 280px;
+  transition: all 0.2s linear;
+}
+
+.exp-card .type {
+  margin: 10px auto 20px;
+  font-size: 0.9rem;
+  color: #e1dede;
+}
+
+.exp-card .place,
+.exp-card .date,
+.project-card .date {
+  color: var(--blue);
+  font-size: 0.8rem;
+}
+
+.exp-card .link {
+  margin-top: 20px;
+}
+.exp-card a:hover,
+.project-card a:hover {
+  color: var(--blue);
+}
+
+.exp-card a,
+.project-card a {
+  text-decoration: none;
+  color: var(--lblue);
+  transition: all linear 0.2s;
+}
+
+.exp-container button {
+  background-color: transparent;
+  color: var(--grey);
+  border: none;
+  width: fit-content;
+  padding: 2px !important;
+  font-size: 1.9rem;
+}
+
+@media (min-width: 1024px) {
+  .exp-card {
+    min-height: 240px !important;
+  }
+}
+
+/* projects section */
+
+.projects {
+  height: 600px;
+  position: relative;
+}
+
+/* projects carousel */
+
+.projects-container {
+  width: fit-content;
+}
+
+.project {
+  position: absolute;
+  transition: all 0.7s ease-out;
+  width: 75%;
+  top: 20%;
+  left: 12%;
+  margin: 0;
+  margin-right: 15px;
+  overflow: hidden;
+}
+
+.project.active-project {
+  transform: translateX(0) scale(1);
+  opacity: 1;
+  visibility: visible;
+  z-index:1000;
+}
+
+.project.semi-active-before {
+  transform: translateX(-25%) scale(0.7);
+  opacity: 0.4;
+  visibility: visible;
+}
+
+.project.semi-active-after {
+  transform: translateX(25%) scale(0.7);
+  opacity: 0.4;
+  visibility: visible;
+}
+
+.project.done-after {
+  transform: scale(0.5);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.project.done-before {
+  transform: scale(0.5);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.projects-container .arrow-up {
+  position: absolute;
+  left: 30%;
+  top:30%;
+}
+
+.projects-container .arrow-down {
+  position: absolute;
+  left: 30%;
+  top:70%;
+}
+
+.projects-container .arrow-left {
+  position: absolute;
+  left: 2%;
+  top:50%;
+  z-index:900;
+ 
+}
+.projects-container .arrow-right {
+  position: absolute;
+  left: 88%;
+  top:50%;
+  z-index:900;
+
+}
+
+.projects-container button {
+  border: none;
+  background-color: transparent;
+  color: var(--grey);
+  font-size: 1.8rem;
+  top:15%;
+}
+
+/* project card styling */
+
+.project-card {
+  background-color: #313d43;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  
+}
+
+.project-card .image{
+  text-align: center;
+
+}
+
+.project-card img {
+  width:100%;
+  max-width:280px;
+  height: 100px;
+  border-radius: 10px 10px 0 0px;
+}
+
+.tech-parent {
+  color: var(--blue);
+  font-size: 0.8rem;
+}
+.project-card .tech {
+  color: var(--lblue);
+}
+
+.project-card .desc {
+  font-size: 0.8rem;
+  margin-top:10px;
+}
+
+/* medium screens */
+
+@media (min-width: 992px) {
+  .tech-parent,
+  .project-card .desc {
+    font-size: 0.8rem;
+  }
+
+  .project {
+    width: 58%;
+    top: 40%;
+    left: 40%;
+  }
+
+  .project-card img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .project.semi-active-before {
+    transform: translateY(-100%) scale(0.7);
+
+  }
+  
+  .project.semi-active-after {
+    transform: translateY(100%) scale(0.7);
+  }
+
+  .project.active-project {
+    transform: translateY(0) scale(1);
+
+  }
+  .project.done-after {
+    transform: translateY(100%) scale(0.5);
+  }
+  
+  .project.done-before {
+    transform: translateY(-100%) scale(0.5);
+  }
+
+  .projects{
+    height:800px;
+  }
+  .contact h1{
+    margin-left:58px;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  .tech-parent,
+  .project-card .desc {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+/* contact section */
+
+.contact{
+  padding:40px;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.contact i{
+  color: var(--grey);
+}
+.contact a{
+  text-decoration: none;
+  color:var(--lblue);
+  transition: all 0.2s linear;
+}
+.contact a:hover{
+  text-decoration: none;
+  color:var(--blue);
+}

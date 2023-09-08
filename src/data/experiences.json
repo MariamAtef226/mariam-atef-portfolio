@@ -1,0 +1,45 @@
+[{
+    "title": "React Development One-Month Internship",
+    "institution": "Information Technology Institution",
+    "date":"Sep 2022 - Oct 2022",
+    "link":"https://drive.google.com/file/d/17PlC282Ro7ul07rqn9T_DtlLwMUrSYSk/view?usp=sharing",
+    "linkMessage":"Check Certificate",
+    "type":"Internship"
+},
+{
+    "title": "Backend Development using MySQL & PHP",
+    "institution": "New Horizons - INTRAST",
+    "date":"Aug 2022 - Dec 2022",
+    "link":"https://drive.google.com/file/d/17PlC282Ro7ul07rqn9T_DtlLwMUrSYSk/view?usp=sharing",
+    "linkMessage":"Check Certificates",
+    "type":"Course"
+},
+{
+    "title": "“Web Design for Everybody: Basics of Web Development & Coding” specialization",
+    "institution": "University of Michigan - Coursera",
+    "date":"Aug 2020 - Aug 2022",
+    "link":"https://www.coursera.org/account/accomplishments/specialization/EP6AZWB8NSTQ",
+    "linkMessage":"Check Certificate",
+    "type":"Course"
+
+},
+{
+    "title": "JavaScript Algorithms and Data Structure",
+    "institution": "Freecodecamp",
+    "date":"Jul 2023",
+    "link":"https://freecodecamp.org/certification/fccff2609da-4c75-4079-a07d-cc4e5995f697/javascript-algorithms-and-data-structures",
+    "linkMessage":"Check Certificate",
+    "type":"Course"
+
+},
+{
+    "title": "Front-end Development Libraries",
+    "institution": "Freecodecamp",
+    "date":"Aug 2023",
+    "link":"https://freecodecamp.org/certification/fccff2609da-4c75-4079-a07d-cc4e5995f697/front-end-development-libraries",
+    "linkMessage":"Check Certificate",
+    "type":"Course"
+
+}
+
+]
