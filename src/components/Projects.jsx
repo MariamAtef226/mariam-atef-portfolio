@@ -17,8 +17,10 @@ import img8 from '../assets/projects/tenzies.gif'
 import img9 from '../assets/projects/drum-machine.gif'
 import img10 from '../assets/projects/react-calculator.gif'
 import img11 from '../assets/projects/quotes-generator.gif'
+import img12 from '../assets/projects/solobanker.gif'
 
-let images = [img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11];
+
+let images = [img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12];
 
 
 

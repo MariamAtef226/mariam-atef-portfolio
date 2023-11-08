@@ -1,4 +1,5 @@
 [
+    
     {
         "title": "Van-Life",
         "date": "Aug 2023",
@@ -7,6 +8,15 @@
         "tech": "React.js, Bootstrap 5, Firebase",
         "desc": "A responsive simple vans rental website, that includes user interface to check available vans for rental & host dashboard to control their hosted vans.",
         "image": "https://raw.githubusercontent.com/MariamAtef226/mariam-atef-portfolio/master/src/assets/background-generator.gif"
+    },
+    {
+        "title": "SoloBanker",
+        "date": "Oct 2023",
+        "link": "https://mariamatef226.github.io/simple-banking-app/",
+        "linkTitle": "Visit Website",
+        "tech": "React.js, Bootstrap 5, Firebase",
+        "desc": "A simple banking web app for a single banker to carry out transactions between their clients by themselves and monitor their transactions history.",
+        "image": "src/assets/solobanker.gif"
     },
     {
         "title": "House Wallet",
@@ -98,5 +108,6 @@
         "desc": "A Random Quotes Generator app that displays a random quote each time the 'New Quote' button is clicked and supports sharing the displayed quote on Twitter.",
         "image": "src/assets/quotes-generator.gif"
     }
+
 
 ]
