@@ -1,5 +1,12 @@
 [
-    
+    {
+        "title": "Dar Al-shamel",
+        "date": "Feb 2024",
+        "link": "https://www.dar-alshamel.com",
+        "linkTitle": "Visit Website",
+        "tech": "React.js, Bootstrap 5",
+        "desc": "A simple landing page for Saudian Logistics company, Dar Alshamel. The page is responsive on all devices."
+    },
     {
         "title": "Van-Life",
         "date": "Aug 2023",
@@ -12,7 +19,7 @@
     {
         "title": "SoloBanker",
         "date": "Oct 2023",
-        "link": "https://mariamatef226.github.io/simple-banking-app/",
+        "link": "https://solobanker.vercel.app/#/",
         "linkTitle": "Visit Website",
         "tech": "React.js, Bootstrap 5, Firebase",
         "desc": "A simple banking web app for a single banker to carry out transactions between their clients by themselves and monitor their transactions history.",

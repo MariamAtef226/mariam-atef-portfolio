@@ -48,29 +48,9 @@ function typewriter(landingline1, landingline2, landingline3, landingline4) {
 
 let str1 = "Hello World!";
 let str2 = "I'm Mariam Atef.";
-let str3 = "A web developer based in Egypt who has studied computer engineering at Alexandria's University, with 3-year-experience in frontend development using vanilla JS, 1 year in React.js, and 1.5 years in backend development using RDBMS and PHP. Want to know more about me?";
+let str3 = "A web developer based in Egypt who has studied computer engineering at Alexandria's University, with 2-year-experience in frontend development using frameworks & libraries like React.js, Bootstrap & Redux, and 1 year in backend development using Native PHP, Node.js/Express & Spring Boot, and databases like MySQl, MongoDB & Firebase. Want to know more about me?";
 let str4 = "<a href='https://drive.google.com/drive/folders/1g3mJLRiWtXGj10i2igbu4mo175dXc-Wl?usp=share_link' class='resume-link'>Check my resume!</a>";
 
-// window.onload = function () {
-
-//     //Typewriter effect in landing
-//     let landingline1 = document.querySelector(".l1");
-//     let landingline2 = document.querySelector(".l2");
-//     let landingline3 = document.querySelector(".l3");
-//     let landingline4 = document.querySelector(".l4");
-
-//     myInterval = setInterval(
-//         typewriter,
-//         50,
-//         landingline1,
-//         landingline2,
-//         landingline3,
-//         landingline4
-//     );
-
-
-
-// }    
 
 document.addEventListener('DOMContentLoaded', function () {
     //Typewriter effect in landing
